@@ -23,7 +23,7 @@ spec:
           service:
             name: argocd-server
             port:
-              name: https
+              name: http
   tls:
   - hosts:
     - k8s-mewo.81752a99329f4123a12b.eastus.aksapp.io
