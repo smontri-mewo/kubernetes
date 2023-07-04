@@ -10,27 +10,27 @@ metadata:
 spec:
   tls:
   - hosts:
-    - k8s-mewo.81752a99329f4123a12b.eastus.aksapp.io
+    - demo.5769f5969f5c4ec3958f.eastus.aksapp.io
     secretName: tls-secret
   rules:
-  - host: k8s-mewo.81752a99329f4123a12b.eastus.aksapp.io
+  - host: demo.5769f5969f5c4ec3958f.eastus.aksapp.io
     http:
       paths:
-      - path: /hello-world-one(/|$)(.*)
+      - path: /hello-world-one
         pathType: Prefix
         backend:
           service:
             name: aks-helloworld-one
             port:
               number: 80
-      - path: /hello-world-two(/|$)(.*)
+      - path: /hello-world-two
         pathType: Prefix
         backend:
           service:
             name: aks-helloworld-two
             port:
               number: 80
-      - path: /(.*)
+      - path: /
         pathType: Prefix
         backend:
           service:
