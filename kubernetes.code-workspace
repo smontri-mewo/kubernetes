@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../../Dev/Kubernetes/kubernetes-prometheus"
+		},
+		{
+			"path": "../../../Dev/Kubernetes/kubernetes-grafana"
 		}
 	],
 	"settings": {}
